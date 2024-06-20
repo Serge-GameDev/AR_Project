@@ -72,7 +72,7 @@ public class Death : MonoBehaviour
             }
 
             // Логика смерти игрока (например, уничтожить объект игрока)
-            Destroy(collision.gameObject);
+           // Destroy(collision.gameObject);
         }
     }
 }
