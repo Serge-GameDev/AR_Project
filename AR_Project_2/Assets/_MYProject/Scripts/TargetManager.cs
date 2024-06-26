@@ -61,7 +61,7 @@ public class TargetsManager : MonoBehaviour
     void Start()
     {
         //register to events
-        GameManager.Instance.OnTargetHit += ResetSpawn;
+       // GameManager.Instance.OnTargetHit += ResetSpawn;
         screenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
     }
     void ResetSpawn(int obj)

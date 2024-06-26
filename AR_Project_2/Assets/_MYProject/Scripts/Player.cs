@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.OnTargetHit += UpdateScore;
+        //GameManager.Instance.OnTargetHit += UpdateScore;
     }
 
     private void UpdateScore(int addedValue)

@@ -13,7 +13,7 @@ public class Target : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            GameManager.Instance.TargetHit(targetValue);
+           // GameManager.Instance.TargetHit(targetValue);
             StartCoroutine(HitEffectAndDestroy());
         }
     }
