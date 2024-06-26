@@ -6,7 +6,7 @@ public class FallingObstacle : MonoBehaviour
 {
     [SerializeField] GameObject fallingObjectPrefab;
     [SerializeField] GameObject shadowFalingObject;
-    [SerializeField] Transform spawnPoint;  
+   // [SerializeField] Transform spawnPoint;  
 
     void OnTriggerEnter(Collider other)
     {
