@@ -13,7 +13,7 @@ public class FallingObstacle : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-            Vector3 spawnPoint = transform.position + new Vector3(0, 25, 0);
+            Vector3 spawnPoint = transform.position + new Vector3(0, 15, 0);
             Vector3 shadowLocation = transform.position + new Vector3(0, 0.2f, 0);
             Instantiate(fallingObjectPrefab, spawnPoint, Quaternion.identity);
             Instantiate(shadowFalingObject, shadowLocation, Quaternion.identity);
