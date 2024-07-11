@@ -345,7 +345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4457848601906800, guid: f661498175107c749a33d97304c423eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.73
+      value: 4.44
       objectReference: {fileID: 0}
     - target: {fileID: 4457848601906800, guid: f661498175107c749a33d97304c423eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1060,6 +1060,7 @@ MonoBehaviour:
     type: 3}
   shadowFalingObject: {fileID: 1036605494026010179, guid: d40ab378dd8def74c891afebb5837f22,
     type: 3}
+  arPlaneManager: {fileID: 0}
 --- !u!4 &553367362
 Transform:
   m_ObjectHideFlags: 0
@@ -3324,6 +3325,7 @@ MonoBehaviour:
     type: 3}
   shadowFalingObject: {fileID: 1036605494026010179, guid: d40ab378dd8def74c891afebb5837f22,
     type: 3}
+  arPlaneManager: {fileID: 0}
 --- !u!4 &1166912957
 Transform:
   m_ObjectHideFlags: 0
@@ -3600,37 +3602,37 @@ PrefabInstance:
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3536.0554
+      value: 475.56
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9907.868
+      value: 450.7955
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17653.207
+      value: -1763.4099
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.63904566
+      value: 0.9925087
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.21912278
+      value: 0.122174144
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.25433928
+      value: 0.0000000042693706
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6920386
+      value: -5.2554366e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
@@ -3675,7 +3677,7 @@ PrefabInstance:
     - target: {fileID: 5765745186628495208, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_DetectionMode
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5765745186628495210, guid: 56e384982503ec64ab99527306348057,
         type: 3}
@@ -3736,6 +3738,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin (AR Rig) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765745186628495223, guid: 56e384982503ec64ab99527306348057,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3828,7 +3835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4675105466496168, guid: 6fdeb1faa1b42904e9210dd047b256ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.59
+      value: 5.61
       objectReference: {fileID: 0}
     - target: {fileID: 4675105466496168, guid: 6fdeb1faa1b42904e9210dd047b256ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4569,6 +4576,7 @@ MonoBehaviour:
     type: 3}
   shadowFalingObject: {fileID: 1036605494026010179, guid: d40ab378dd8def74c891afebb5837f22,
     type: 3}
+  arPlaneManager: {fileID: 0}
 --- !u!4 &1529005625
 Transform:
   m_ObjectHideFlags: 0
@@ -5153,7 +5161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4675105466496168, guid: 6fdeb1faa1b42904e9210dd047b256ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.59
+      value: 5.3
       objectReference: {fileID: 0}
     - target: {fileID: 4675105466496168, guid: 6fdeb1faa1b42904e9210dd047b256ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6557,37 +6565,37 @@ PrefabInstance:
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3536.0554
+      value: 475.56
       objectReference: {fileID: 0}
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9907.868
+      value: 450.7955
       objectReference: {fileID: 0}
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17653.207
+      value: -1763.4099
       objectReference: {fileID: 0}
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.63904566
+      value: 0.9925087
       objectReference: {fileID: 0}
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.21912278
+      value: 0.122174144
       objectReference: {fileID: 0}
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.25433928
+      value: 0.0000000042693706
       objectReference: {fileID: 0}
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6920386
+      value: -5.2554366e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4246415067774217869, guid: ef6bdb9c0a5b81e4493e69ccf9573cf6,
         type: 3}

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class FallingObstacle : MonoBehaviour
 {
     [SerializeField] GameObject fallingObjectPrefab;
     [SerializeField] GameObject shadowFalingObject;
-   // [SerializeField] Transform spawnPoint;  
+    [SerializeField] ARPlaneManager arPlaneManager;
 
     void OnTriggerEnter(Collider other)
     {
