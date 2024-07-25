@@ -12,8 +12,12 @@ public class PlayerMovement : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
     bool walking;
     Coroutine movementCoroutine;
 
+    private bool movementEnabled = true; // Flag to control movement
+
     public void OnDrag(PointerEventData eventData)
     {
+        if (!movementEnabled) return; // Prevent movement if disabled
+
         transform.position = eventData.position;
         transform.localPosition = Vector2.ClampMagnitude(eventData.position - (Vector2)gamePad.position, gamePad.rect.width * 0.5f);
 
@@ -29,6 +33,8 @@ public class PlayerMovement : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (!movementEnabled) return; // Prevent movement if disabled
+
         if (movementCoroutine == null)
         {
             movementCoroutine = StartCoroutine(PlayerARMovement());
@@ -37,6 +43,8 @@ public class PlayerMovement : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (!movementEnabled) return; // Prevent movement if disabled
+
         transform.localPosition = Vector3.zero;
         move = Vector3.zero;
         walking = false;
@@ -65,5 +73,28 @@ public class PlayerMovement : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
             }
             yield return null;
         }
+    }
+
+    public void DisableMovement(float duration)
+    {
+        StartCoroutine(DisableMovementCoroutine(duration));
+    }
+
+    private IEnumerator DisableMovementCoroutine(float duration)
+    {
+        movementEnabled = false;
+        move = Vector3.zero;
+        walking = false;
+        player.GetComponent<Animator>().SetBool("Walk", false);
+        transform.localPosition = Vector3.zero;
+
+        if (movementCoroutine != null)
+        {
+            StopCoroutine(movementCoroutine);
+            movementCoroutine = null;
+        }
+
+        yield return new WaitForSeconds(duration);
+        movementEnabled = true;
     }
 }
