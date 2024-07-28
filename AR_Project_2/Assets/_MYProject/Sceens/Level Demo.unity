@@ -7669,12 +7669,12 @@ PrefabInstance:
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 425430.84
+      value: 425703.84
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1701914.4
+      value: -1703006.4
       objectReference: {fileID: 0}
     - target: {fileID: 5765745185389685717, guid: 56e384982503ec64ab99527306348057,
         type: 3}
@@ -14422,6 +14422,8 @@ MonoBehaviour:
   bounceForce: 5
   bounceEffectPrefab: {fileID: 1171201465392465800, guid: c1180d4af698109449d96fc5f6a8914c,
     type: 3}
+  gamePadCanvas: {fileID: 2083382856}
+  disableMovementTime: 1
 --- !u!1001 &8760961762070631258
 PrefabInstance:
   m_ObjectHideFlags: 0
